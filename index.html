@@ -17,10 +17,67 @@
         <!--Style CSS-->jax/
         <link rel="stylesheet" href="style.css" type="text/css" />
         <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            overflow-x:hidden;
+            font-family:'Open Sans', sans-serif;
+            text-rendering:optimizeLegibility !important;
+        }
+        a{
+            text-decoration:none;
+            transition:all 500ms ease-in-out;
+        }
+        h1,h2,h4{
+            font-family:'PT Sans Narrow', Arial, sans-serif;
+            text-transform:uppercase;
+            font-weight:500;
+            padding-top:10px;
+        }
+        p{
+            font-size:15px;
+            line-height:25;
+        }
+        .btn{
+            transition: all 300ms ease-in-out;
+            font-weight: 500 !important;
+            text-transform:uppercase;
+        }
+        .btn:hover{
+            background-color:#ededed !important;
+            color:#3c3c3c !important;
+            border:1px solif #fff !important;
+        }
+        /*NAVIGATION*/
+        .navbar{
+            text-transform:uppercase;
+            font-family:'PT Sans Narrow', Arial,sans-serif;
+            font-weight:500;
+        }
+        /*HEADER*/
+        .header{
+            box-sizing: border-box;
+        }
+        .slideshow-container{
+            position:relative;
+            margin:auto;
+        }
+        
+        .header .myimages img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            max-width:1500px;
+            height:500px;
+        }
+        
+        /*ABOUT US*/
             .about
             {
                 padding: 80px 0 80px;
-                text-align:
+                text-align: center;
             }
             
             .about span{
@@ -31,17 +88,106 @@
                 font-size:20px;
             }
             
-            .about{
+            .about i{
                 height:50px;
                 width:50px;
                 font-size:25px;
-                padding:15px 10px;
+                padding: 15px 10px;
                 border-radius:40px;
                 background-color:#5cb85c;
                 color:#fff;
             }
+            
+            .team h3{
+                margin-top:30px;
+            }
+            
+            .team img{
+                margin-top:30px;
+                border-radius:40px;
+            }
+            
+            .team p{
+                color:#737373;
+            }
+            
+            .getinvolved{
+                padding:50px 0 80px;
+                text-align:center;
+                background-color:#5cb85c;
+                margin-top:50px;
+            }
+            
+            .getinvolved .options{
+                padding:30px;
+                border: 1px solid #ccc;
+                background-color:#fff;
+                border-radius:5px;
+                margin-top:30px;
+                
+            }
+            .getinvolved i{
+                width:50px;
+                height: 50px;
+                font-size:40px;
+            }
+            
+            .contact{
+                background-color:#fff;
+                margin-top:20px;
+            }
+            
+            .contact .message{
+                height:100px;
+                margin-bottom: 5px;
+            }
+            /*FOOTER*/
+            .footer {
+                background-color:#fff;
+                margin-top:20px;
+            }
+            .footer .btn{
+                margin-top:5px;
+            }
+            .footer i{
+                font-size:20px;
+            }
+            /*DONATE*/
+            .donate{
+                background-color:#fff;
+                margin-top:20px;
+            }
+            .donate button{
+                padding:10px;
+                width:100px;
+                margin:5px;
+            }
+            .donate .btn:hover{
+                background-color: #428bca!important;
+                color:#fff !important;
+
+            }
+            
+            .donate .form-control{
+                width:330px;
+                padding:10px;
+                margin:5px;
+            }
+            
+            
         </style>
         
+        <link rel= "styesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <link rel="stylesheet" href="css/animate.css">
+         
+         <script type = "text/javascript" src="javascript.js"></script>
+
+         
+
     </head>
     
     <body>
@@ -90,6 +236,12 @@
                 <div class="myimages">
                     <img src="https://raw.githubusercontent.com/hasratsabit/landing-page/master/images/Responsive-Web-Design.png">
                 </div>
+                <div class="myimages">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/21jivLJsAeL.jpg">
+                </div>
+                <div class="myimages">
+                    <img src="http://soappotions.com/wp-content/uploads/2017/10/orange.jpg">
+                </div>
             </div>
         </div>
         
@@ -97,7 +249,7 @@
         <div id="about" class="about">
             <div class="container">
                 <h2>About Us</h2>
-                <p> We are a nonp rofit organization</p>
+                <p> We are a nonprofit organization</p>
                 <hr>
                 <h3>Our Work</h3>
                 <div class="row">
@@ -118,6 +270,42 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Get Involved-->
+<div id="getinvolved" class="getInvolved">
+    <div class="container">
+        <h2>Get Involved</h2>
+        <div class= row>
+            <div class = "col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.2s">
+                <div class="options">
+                    <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                    <h3>Explore</h3>
+                    <p>Lorem ipsum</p>
+                    <button class="btn btn-success">Visit</button>
+                </div>
+            </div>
+         <div class = "col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.2s">
+                <div class="options">
+                    <i class="fas fa-hands-helping" aria-hidden="true"></i>
+                    <h3>Volunteer</h3>
+                    <p>Lorem ipsum</p>
+                    <button class="btn btn-success">Sign Up</button>
+                </div>
+            </div>
+         <div class = "col-lg-4 col-md-4 wow flipInY" data-wow-delay="1.2s">
+                <div class="options">
+                    <i class="fas fa-hand-holding-usd" aria-hidden="true"></i>
+                    <h3>Give</h3>
+                    <p>Lorem ipsum</p>
+                    <button class="btn btn-success">Donate</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+
+        
+        
         
         <!--Team-->
         <div id="team" class="team">
@@ -230,6 +418,7 @@
         <!--WOW.js -->
         
         
+        
     </body>
 
-</html>
+</html
